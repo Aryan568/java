@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.*;
 
 public class QPractise {
     // public static float calAverage(Float a, float b, float c) {
@@ -283,16 +284,134 @@ public class QPractise {
        
     // }
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        String s = scan.nextLine();
-        scan.close();
-        String arr[]= s.split(",|'");
-        for(int i=0; i<arr.length(); i++)
-        {
-            sSystem.out.println(arr[i]);
-        }
-        
-    }
+   /* public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("n");
+        int n = sc.nextInt();
+        int d = 0;
+        int arr[][]= new int[n][10];
 
+        // System.out.println("***************************");
+        for(int i=0; i<n; i++)
+        {
+            // System.out.println("Enter d dig");
+            d = sc.nextInt();
+            for(int j=0; j<d; j++)
+            {
+                arr[i][j]= sc.nextInt();
+            }
+        }
+
+        // System.out.println("Enter q");
+        int q = sc.nextInt();
+
+        // for (int i = 0; i < n; i++) {
+        //     for (int j = 0; j < 10; j++) {
+        //         System.out.print(arr[i][j]);
+        //     }
+        //     System.out.println();
+            
+        // }
+
+        for (int i = 0; i < q; i++) {
+            // System.out.println("Enter x");
+            int x = sc.nextInt();
+            // System.out.println("Enter y");
+            int y = sc.nextInt();
+
+            if(x <= n && y <= 10){
+                System.out.println(arr[x - 1][y - 1]);
+            }
+            else
+            System.out.println("ERROR!");
+        }
+    }*/
+
+    // public static void main(String[] args) {
+    //     Scanner sc= new Scanner(System.in);
+    //     // System.out.println("n");
+    //     int n = sc.nextInt();
+    //     int d = 0;
+    //     List<List<Integer>> list = new ArrayList<>(20000);
+    //     for (int i = 0; i < 5; i++) {
+    //         list.add(new ArrayList<>());
+    //     }
+
+    //     // System.out.println("***************************");
+    //     for(int i=0; i<n; i++)
+    //     {
+    //         // System.out.println("Enter d dig");
+    //         d = sc.nextInt();
+    //         for(int j=0; j<d; j++)
+    //         {
+    //             list.get(i).add(sc.nextInt());
+    
+    //         }
+    //     }
+
+    //     //System.out.println("Enter q");
+    //     int q = sc.nextInt();
+
+    //     // System.out.println(Arrays.deepToString(list.toArray()));
+
+    //     for (int i = 0; i < q; i++) {
+    //         //System.out.println("Enter x");
+    //         int x = sc.nextInt();
+    //         //System.out.println("Enter y");
+    //         int y = sc.nextInt();
+
+    //         if(x <= n && y <= list.get(i).size()){
+    //             System.out.println(list.get(x-1).get(y-1));
+    //         }
+    //         else
+    //         System.out.println("ERROR!");
+    //     }
+    // }
+
+    // public static void main(String[] args){
+	// 	Scanner sc = new Scanner(System.in);
+	// 	int testCases = Integer.parseInt(sc.nextLine());
+	// 	while(testCases>0){
+	// 		String pattern = sc.nextLine();
+    //       	//Write your code
+    //           try{
+    //               Pattern.compile(pattern);
+    //               System.out.println("Valid");
+    //           }
+    //           catch(Exception e){
+    //               System.out.println("Invalid");
+    //           }
+    //           testCases--;
+	// 	}
+    
+	// public static void main(String[] args) {
+    //     String s = "Gfg Geeks \n GeeksForGeeks";
+  
+    //     // create a new scanner
+    //     // with the specified String Object
+    //     Scanner scanner = new Scanner(s);
+  
+    //     // print the next line
+    //     System.out.println(scanner.nextLine());
+  
+    //     // print the next line again
+    //     System.out.println(scanner.nextLine());
+  
+    //     // print the next line again
+    //     System.out.println(scanner.nextLine());
+  
+    //     scanner.close();
+    //}
+    // public static void main(String[] args) {
+    //     Scanner sc= new Scanner(System.in);
+        
+    //     int n=1;
+    //     while(sc.hasNextLine()){
+    //         String str = sc.nextLine();
+    //         System.out.println(n++ +" "+str);
+    //     }
+        public static void main(String[] args) {
+            System.out.println(Pattern.matches("(B\\d)(AB)\\2\\1", "B2AB"));
+        }
+    //}
 }
