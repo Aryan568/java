@@ -410,8 +410,6 @@ public class QPractise {
     //         String str = sc.nextLine();
     //         System.out.println(n++ +" "+str);
     //     }
-        public static void main(String[] args) {
-            System.out.println(Pattern.matches("(B\\d)(AB)\\2\\1", "B2AB"));
-        }
+        
     //}
 }
