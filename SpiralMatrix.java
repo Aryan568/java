@@ -33,25 +33,25 @@ public class SpiralMatrix {
 
         while(rs<=re && cs<=ce)
         {
-            for(int i=cs; i<=ce; i++)
+            for(int i=cs; i<=ce && rs<=re && cs<=ce; i++)
             {
                 System.out.print(num[rs][i]+" ");
             }
             rs++;
 
-            for(int i=rs; i<=re; i++)
+            for(int i=rs; i<=re && rs<=re && cs<=ce; i++)
             {
                 System.out.print(num[i][ce]+" ");
             }
             ce--;
 
-            for(int i=ce; i>=cs; i--)
+            for(int i=ce; i>=cs && rs<=re && cs<=ce; i--)
             {
                 System.out.print(num[re][i]+" ");
             }
             re--;
 
-            for(int i=re; i>=rs; i--)
+            for(int i=re; i>=rs && rs<=re && cs<=ce; i--)
             {
                 System.out.print(num[i][cs]+" ");
             }
